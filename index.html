@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/output.css">
+        <link rel="stylesheet" href="src/scrollBar.css">
+        <link rel="stylesheet" href="src/utility.css">
+        <title>Twitter</title>
+</head>
+
+<body class="bg-black">
+        <div class="container mx-auto flex font-medium">
+                <div
+                        class="first z-10 opacity-0 mxsm:opacity-100 transition-opacity duration-300 fixed mxsm:relative h-screen bg-black w-16 lg:min-w-64 flex-col justify-around p-4 border-r border-gray-800 flex">
+                        <img class="invert mb-1 w-6" width="50" src="images/twitter logo.svg" alt="logo">
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/home.svg" alt="Home"><span class="hidden lg:inline">Home</span>
+                        </div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/search.svg" alt="Explore"><span
+                                        class="hidden lg:inline">Explore</span>
+                        </div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/bell.svg" alt="Notifications"><span
+                                        class="hidden lg:inline">Notifications</span></div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/envelope-alt.svg" alt="Messages"><span
+                                        class="hidden lg:inline">Messages</span></div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/trending-up.svg" alt="Grok"><span
+                                        class="hidden lg:inline">Grok</span>
+                        </div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/feed.svg" alt="Lists"><span class="hidden lg:inline">Lists</span>
+                        </div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/bookmark.svg" alt="Bookmarks"><span
+                                        class="hidden lg:inline">Bookmarks</span></div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/people.svg" alt="Communities"><span
+                                        class="hidden lg:inline">Communities</span></div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img width="50" class="invert"
+                                        src="images/twitter logo.svg" alt="Premium"><span
+                                        class="hidden lg:inline">Premium</span></div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/person.svg" alt="Profile"><span
+                                        class="hidden lg:inline">Profile</span>
+                        </div>
+                        <div class="hovOp text-gray-300 flex gap-3 w-7 text-xl"><img class="invert"
+                                        src="images/align-center.svg" alt="More"><span
+                                        class="hidden lg:inline">More</span>
+                        </div>
+                        <button class="bg-sky-500 h-7 hovOp lg:h-11 rounded-full w-11/12 lg:w-4/5 text-white"><span
+                                        class="hidden lg:inline">Post</span><img width="30" class="invert lg:hidden"
+                                        src="images/pen.svg" alt="penIcon"></button>
+                        <div class="text-white flex justify-between text-sm items-center mt-24"><img width="35"
+                                        class="hovOp rounded-full" src="images/Daniel Hashmi.jpg" alt="profileLogo">
+                                <div class="hidden lg:inline">
+                                        <h3>Daniel Hashmi</h3>
+                                        <h5 class="text-gray-600">@DanielHasmi</h5>
+                                </div> <img width="20" class="hovOp invert hidden lg:inline" src="images/ellypsis.svg"
+                                        alt="dots">
+                        </div>
+                </div>
+
+                <div class="Second w-full text-white px-4 border-r border-gray-800 overflow-y-scroll max-h-dvh">
+                        <!-- top buttons -->
+                        <div class="flex sticky top-0 bg-[#000000bf] p-4 justify-between items-center ">
+                                <div class="flex justify-around w-full ">
+                                        <button class="navBtn1 border-sky-600 border-b-4 p-2">For you</button>
+                                        <button class="navBtn2 text-gray-500">Following</button>
+                                </div>
+                                <img width="25" class="hovOp invert" src="images/settings.svg" alt="settingsIcon">
+                        </div>
+                        <!-- user controls -->
+                        <div class="Main2 hidden">
+                                <div
+                                        class="flex text-[.7rem] md:text-[1rem] items-center justify-between border border-gray-800 p-6 rounded-full hover:bg-gray-900">
+                                        <div class="md:mr-8 flex items-center gap-4 md:gap-8">
+                                                <img width="30" class="rounded-full hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                                <div class="flex flex-col items-center">
+                                                        <h3 class="flex items-center gap-3"><span
+                                                                        class="hover:underline hovOp">Daniel Hashmi
+                                                                </span><img width="15" class="bg-sky-500 rounded-full"
+                                                                        src="images/ok-circle.svg" alt="BlueTicIcon">
+                                                        </h3>
+
+                                                        <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                                </div>
+                                        </div>
+                                        <button
+                                                class="bg-white opacity-55 text-black rounded-full w-fit px-3 py-1">Following</button>
+                                </div>
+                                <div
+                                        class="flex text-[.7rem] md:text-[1rem] items-center justify-between border border-gray-800 p-6 rounded-full hover:bg-gray-900">
+                                        <div class="md:mr-8 flex items-center gap-4 md:gap-8">
+                                                <img width="30" class="rounded-full hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                                <div class="flex flex-col items-center">
+                                                        <h3 class="flex items-center gap-3"><span
+                                                                        class="hover:underline hovOp">Daniel Hashmi
+                                                                </span><img width="15" class="bg-sky-500 rounded-full"
+                                                                        src="images/ok-circle.svg" alt="BlueTicIcon">
+                                                        </h3>
+
+                                                        <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                                </div>
+                                        </div>
+                                        <button
+                                                class="bg-white opacity-55 text-black rounded-full w-fit px-3 py-1">Following</button>
+                                </div>
+                                <div
+                                        class="flex text-[.7rem] md:text-[1rem] items-center justify-between border border-gray-800 p-6 rounded-full hover:bg-gray-900">
+                                        <div class="md:mr-8 flex items-center gap-4 md:gap-8">
+                                                <img width="30" class="rounded-full hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                                <div class="flex flex-col items-center">
+                                                        <h3 class="flex items-center gap-3"><span
+                                                                        class="hover:underline hovOp">Daniel Hashmi
+                                                                </span><img width="15" class="bg-sky-500 rounded-full"
+                                                                        src="images/ok-circle.svg" alt="BlueTicIcon">
+                                                        </h3>
+
+                                                        <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                                </div>
+                                        </div>
+                                        <button
+                                                class="bg-white opacity-55 text-black rounded-full w-fit px-3 py-1">Following</button>
+                                </div>
+                                <div
+                                        class="flex text-[.7rem] md:text-[1rem] items-center justify-between border border-gray-800 p-6 rounded-full hover:bg-gray-900">
+                                        <div class="md:mr-8 flex items-center gap-4 md:gap-8">
+                                                <img width="30" class="rounded-full hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                                <div class="flex flex-col items-center">
+                                                        <h3 class="flex items-center gap-3"><span
+                                                                        class="hover:underline hovOp">Daniel Hashmi
+                                                                </span><img width="15" class="bg-sky-500 rounded-full"
+                                                                        src="images/ok-circle.svg" alt="BlueTicIcon">
+                                                        </h3>
+
+                                                        <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                                </div>
+                                        </div>
+                                        <button
+                                                class="bg-white opacity-55 text-black rounded-full w-fit px-3 py-1">Following</button>
+                                </div>
+                                <div
+                                        class="flex text-[.7rem] md:text-[1rem] items-center justify-between border border-gray-800 p-6 rounded-full hover:bg-gray-900">
+                                        <div class="md:mr-8 flex items-center gap-4 md:gap-8">
+                                                <img width="30" class="rounded-full hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                                <div class="flex flex-col items-center">
+                                                        <h3 class="flex items-center gap-3"><span
+                                                                        class="hover:underline hovOp">Daniel Hashmi
+                                                                </span><img width="15" class="bg-sky-500 rounded-full"
+                                                                        src="images/ok-circle.svg" alt="BlueTicIcon">
+                                                        </h3>
+
+                                                        <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                                </div>
+                                        </div>
+                                        <button
+                                                class="bg-white opacity-55 text-black rounded-full w-fit px-3 py-1">Following</button>
+                                </div>
+                                <div
+                                        class="flex text-[.7rem] md:text-[1rem] items-center justify-between border border-gray-800 p-6 rounded-full hover:bg-gray-900">
+                                        <div class="md:mr-8 flex items-center gap-4 md:gap-8">
+                                                <img width="30" class="rounded-full hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                                <div class="flex flex-col items-center">
+                                                        <h3 class="flex items-center gap-3"><span
+                                                                        class="hover:underline hovOp">Daniel Hashmi
+                                                                </span><img width="15" class="bg-sky-500 rounded-full"
+                                                                        src="images/ok-circle.svg" alt="BlueTicIcon">
+                                                        </h3>
+
+                                                        <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                                </div>
+                                        </div>
+                                        <button
+                                                class="bg-white opacity-55 text-black rounded-full w-fit px-3 py-1">Following</button>
+                                </div>
+                        </div>
+                        <div class="Main ">
+                                <div class="border-b border-gray-800 mt-1 xxsm:p-4">
+                                        <div class="flex gap-2 items-start">
+                                                <img width="35" class="hovOp rounded-full"
+                                                        src="images/Daniel Hashmi.jpg" alt="profileLogo">
+                                                <div class="flex flex-col gap-6 w-full">
+                                                        <input class="bg-black outline-none text-gray-200 font-normal"
+                                                                type="text" placeholder="What is happening?!">
+                                                        <div class="flex justify-between items-center">
+                                                                <div class="flex gap-0.5 xsm:gap-4">
+                                                                        <img width="20"
+                                                                                class="hovOp invert rounded-full"
+                                                                                src="images/image.svg"
+                                                                                alt="galleryIcon">
+                                                                        <img width="20"
+                                                                                class="hovOp invert rounded-full"
+                                                                                src="images/control-centre.svg"
+                                                                                alt="control-centreIcon">
+                                                                        <img width="20"
+                                                                                class="hovOp invert rounded-full"
+                                                                                src="images/happy-face.svg"
+                                                                                alt="emojiIcon">
+                                                                        <img width="20"
+                                                                                class="hovOp invert rounded-full"
+                                                                                src="images/layout-right.svg"
+                                                                                alt="layoutIcon">
+                                                                        <img width="20"
+                                                                                class="hovOp invert rounded-full"
+                                                                                src="images/location.svg"
+                                                                                alt="locationIcon">
+                                                                        <img width="20"
+                                                                                class="hovOp invert rounded-full"
+                                                                                src="images/window.svg"
+                                                                                alt="windowIcon">
+                                                                </div>
+                                                                <button
+                                                                        class="bg-sky-500 hovOp h-8 rounded-full w-16 text-white">Post</button>
+
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- show more buttton -->
+                                <h3
+                                        class="p-4 text-center font-thin text-sky-400 cursor-pointer tracking-widest text-xs border-b border-gray-800">
+                                        Show 103 posts</h3>
+                                <!-- cards -->
+                                <div class="card py-3">
+                                        <div class=" flex justify-center items-start">
+                                                <img width="35" class="ml-2 rounded-full mt-2 mr-2 hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="userLogo"></img>
+                                                <div>
+                                                        <h2 class="flex items-center gap-1 text-[0.6rem] md:text-[1rem] ">Daniel Hasmi <img
+                                                                        class="bg-sky-500 rounded-full" width="15"
+                                                                        src="images/ok-circle.svg"
+                                                                        alt="BlueTicIcon"></img>
+                                                                <span class="text-gray-600 ml-1">@DanielHashmi -
+                                                                        22h</span>
+                                                        </h2>
+
+                                                        <p class="text-sm text-gray-300">This is something interesting
+                                                                for you a
+                                                                painting.</p><br>
+                                                        <p class="mb-2 text-sm text-gray-300">The Mountains under the
+                                                                wild sky
+                                                                are staring each other...</p>
+                                                        <img class="rounded-3xl mb-3" src="images/pxfuel.jpg"
+                                                                alt="postImage">
+                                                        <div class="flex justify-between text-xs text-gray-500">
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chat.svg" alt="chatIcon">
+                                                                        1K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/retweet.svg"
+                                                                                alt="retweetIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/heart.svg" alt="heartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chart.svg" alt="chartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/bookmark.svg" alt="tagIcon">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/share.svg" alt="shareIcon">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <img width="20" class="invert opacity-55 cursor-pointer"
+                                                        src="images/ellypsis.svg" alt="dotsIcon">
+                                        </div>
+                                </div>
+                                <div class="card py-3">
+                                        <div class=" flex justify-center items-start">
+                                                <img width="35" class="ml-2 rounded-full mt-2 mr-2 hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="userLogo"></img>
+                                                <div>
+                                                        <h2 class="flex items-center gap-1 text-[0.6rem] md:text-[1rem]">Daniel Hasmi <img
+                                                                        class="bg-sky-500 rounded-full" width="15"
+                                                                        src="images/ok-circle.svg"
+                                                                        alt="BlueTicIcon"></img>
+                                                                <span class="text-gray-600 ml-1">@DanielHashmi -
+                                                                        22h</span>
+                                                        </h2>
+
+                                                        <p class="text-sm text-gray-300">This is something interesting
+                                                                for you a
+                                                                painting.</p><br>
+                                                        <p class="mb-2 text-sm text-gray-300">The Mountains under the
+                                                                wild sky
+                                                                is are staring each other...</p>
+                                                        <img class="rounded-3xl mb-3" src="images/pxfuel.jpg"
+                                                                alt="postImage">
+                                                        <div class="flex justify-between text-xs text-gray-500">
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chat.svg" alt="chatIcon">
+                                                                        1K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/retweet.svg"
+                                                                                alt="retweetIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/heart.svg" alt="heartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chart.svg" alt="chartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/bookmark.svg" alt="tagIcon">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/share.svg" alt="shareIcon">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <img width="20" class="invert opacity-55 cursor-pointer"
+                                                        src="images/ellypsis.svg" alt="dotsIcon">
+                                        </div>
+                                </div>
+                                <div class="card py-3">
+                                        <div class=" flex justify-center items-start">
+                                                <img width="35" class="ml-2 rounded-full mt-2 mr-2 hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="userLogo"></img>
+                                                <div>
+                                                        <h2 class="flex items-center gap-1 text-[0.6rem] md:text-[1rem]">Daniel Hasmi <img
+                                                                        class="bg-sky-500 rounded-full" width="15"
+                                                                        src="images/ok-circle.svg"
+                                                                        alt="BlueTicIcon"></img>
+                                                                <span class="text-gray-600 ml-1">@DanielHashmi -
+                                                                        22h</span>
+                                                        </h2>
+
+                                                        <p class="text-sm text-gray-300">This is something interesting
+                                                                for you a
+                                                                painting.</p><br>
+                                                        <p class="mb-2 text-sm text-gray-300">The Mountains under the
+                                                                wild sky
+                                                                is are staring each other...</p>
+                                                        <img class="rounded-3xl mb-3" src="images/pxfuel.jpg"
+                                                                alt="postImage">
+                                                        <div class="flex justify-between text-xs text-gray-500">
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chat.svg" alt="chatIcon">
+                                                                        1K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/retweet.svg"
+                                                                                alt="retweetIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/heart.svg" alt="heartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chart.svg" alt="chartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/bookmark.svg" alt="tagIcon">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/share.svg" alt="shareIcon">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <img width="20" class="invert opacity-55 cursor-pointer"
+                                                        src="images/ellypsis.svg" alt="dotsIcon">
+                                        </div>
+                                </div>
+                                <div class="card py-3">
+                                        <div class=" flex justify-center items-start">
+                                                <img width="35" class="ml-2 rounded-full mt-2 mr-2 hovOp"
+                                                        src="images/Daniel Hashmi.jpg" alt="userLogo"></img>
+                                                <div>
+                                                        <h2 class="flex items-center gap-1 text-[0.6rem] md:text-[1rem]">Daniel Hasmi <img
+                                                                        class="bg-sky-500 rounded-full" width="15"
+                                                                        src="images/ok-circle.svg"
+                                                                        alt="BlueTicIcon"></img>
+                                                                <span class="text-gray-600 ml-1">@DanielHashmi -
+                                                                        22h</span>
+                                                        </h2>
+
+                                                        <p class="text-sm text-gray-300">This is something interesting
+                                                                for you a
+                                                                painting.</p><br>
+                                                        <p class="mb-2 text-sm text-gray-300">The Mountains under the
+                                                                wild sky
+                                                                is are staring each other...</p>
+                                                        <!-- <img class="rounded-3xl mb-3" src="images/pxfuel.jpg" alt="postImage"> -->
+                                                        <!-- Here Add content -->
+                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                                                                excepturi officia voluptatum, explicabo nisi, aliquid
+                                                                delectus
+                                                                alias atque praesentium quasi perferendis numquam maxime
+                                                                debitis
+                                                                ullam laborum dolorum beatae dicta et?</p>
+                                                        <div class="flex justify-between text-xs text-gray-500">
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chat.svg" alt="chatIcon">
+                                                                        1K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/retweet.svg"
+                                                                                alt="retweetIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/heart.svg" alt="heartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/chart.svg" alt="chartIcon">
+                                                                        5.7K
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/bookmark.svg" alt="tagIcon">
+                                                                        <img class="hovOp invert" width="20"
+                                                                                src="images/share.svg" alt="shareIcon">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <img width="20" class="invert opacity-55 cursor-pointer"
+                                                        src="images/ellypsis.svg" alt="dotsIcon">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- thirdBox -->
+                <div class="Third min-w-80  px-5 py-2 hidden lg:flex flex-col gap-5">
+                        <!-- SearchBox -->
+                        <div class="searchBox flex items-center p-2 rounded-full bg-gray-800 gap-4">
+                                <img width="20" class="opacity-50 invert" src="images/search.svg" alt="searchIcion">
+                                <input class="bg-gray-800 text-white outline-none font-thin" type="text"
+                                        placeholder="Search">
+                        </div>
+                        <!-- SubsBox -->
+                        <div class="boxSubs text-white bg-gray-800 rounded-md p-2 flex flex-col gap-3">
+                                <h2 class="text-lg">Subscribe to Premium</h2>
+                                <p class="text-sm text-gray-300">Subscribe to unlock new features and of eligible,
+                                        receive a share of ads revenue.</p>
+                                <button
+                                        class="bg-sky-500 hovOp rounded-full w-fit px-3 py-1 text-white">Subscribe</button>
+                        </div>
+                        <!-- Second Box -->
+                        <div class="SecBox text-white bg-gray-800 rounded-md p-2 flex flex-col gap-3">
+                                <h2 class="text-lg">What's happening</h2>
+                                <div class="flex justify-between">
+                                        <div>
+                                                <h3 class="text-sm">Menswear Fashion Weeks</h3>
+                                                <h3 class="text-gray-500 text-sm">Fashion + LIVE</h3>
+                                        </div>
+                                        <img width="80" class="rounded-lg" src="images/wall.png" alt="pic">
+                                </div>
+                                <div>
+                                        <h3 class="text-gray-500 text-sm">Trending in Twitter</h3>
+                                        <h3 class="text-sm">#DanielHashmiProjects</h3>
+                                        <h3 class="text-gray-500 text-sm">1,040 posts</h3>
+                                </div>
+                                <div>
+                                        <h3 class="text-gray-500 text-sm">Trending in Pakistan</h3>
+                                        <h3 class="text-sm">#DanielHashmi</h3>
+                                        <h3 class="text-gray-500 text-sm">160 posts</h3>
+                                </div>
+                                <div>
+                                        <h3 class="text-gray-500 text-sm">Trending in YouTube</h3>
+                                        <h3 class="text-sm">#TwitterProjectByDaniel</h3>
+                                        <h3 class="text-gray-500 text-sm">4,760 posts</h3>
+                                </div>
+                                <h3
+                                        class="p-4 font-thin text-sky-400 cursor-pointer tracking-widest text-xs border-b border-gray-800">
+                                        Show more</h3>
+                        </div>
+                        <!-- Third Box -->
+                        <div class="trdBox text-white bg-gray-800 rounded-md p-2 flex flex-col gap-3">
+                                <h2 class="text-lg">Who to follow</h2>
+                                <div class="flex items-center justify-between">
+                                        <img width="30" class="hovOp" src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                        <div class="mr-8">
+                                                <h3 class="flex items-center">Daniel Hashmi <img width="15"
+                                                                class="bg-sky-500 rounded-full"
+                                                                src="images/ok-circle.svg" alt="BlueTicIcon"></h3>
+                                                <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                        </div>
+                                        <button
+                                                class="bg-white hovOp text-black rounded-full w-fit px-3 py-1">Follow</button>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                        <img width="30" class="hovOp" src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                        <div class="mr-8">
+                                                <h3 class="flex items-center">Daniel Hashmi <img width="15"
+                                                                class="bg-sky-500 rounded-full"
+                                                                src="images/ok-circle.svg" alt="BlueTicIcon"></h3>
+                                                <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                        </div>
+                                        <button
+                                                class="bg-white hovOp text-black rounded-full w-fit px-3 py-1">Follow</button>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                        <img width="30" class="hovOp" src="images/Daniel Hashmi.jpg" alt="profileImg">
+                                        <div class="mr-8">
+                                                <h3 class="flex items-center">Daniel Hashmi <img width="15"
+                                                                class="bg-sky-500 rounded-full"
+                                                                src="images/ok-circle.svg" alt="BlueTicIcon"></h3>
+                                                <h3 class="text-sm text-gray-500">@DanielHasmi</h3>
+                                        </div>
+                                        <button
+                                                class="bg-white hovOp text-black rounded-full w-fit px-3 py-1">Follow</button>
+                                </div>
+                                <h3
+                                        class="p-4 font-thin text-sky-400 cursor-pointer tracking-widest text-xs border-b border-gray-800">
+                                        Show more</h3>
+                        </div>
+                        <div class="bg-black text-gray-500 text-xs flex flex-wrap gap-2">
+                                <a href="#">Terms of Service</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Cookie Policy</a>
+                                <a href="#">Accessibility</a>
+                                <a href="#">Ads info</a>
+                                <a href="#">More... @ 2024 X Corp.</a>
+                        </div>
+                </div>
+        </div>
+        <script src="js/app.js"></script>
+</body>
+
+</html>
