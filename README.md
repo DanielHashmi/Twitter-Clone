@@ -1,5 +1,3 @@
-# Twitter Clone
- 
 # Twitter Clone 🐦
 
 This is a simple Twitter clone project with a focus on UI, built some functions using **JavaScript** and styled with **Tailwind CSS**.
