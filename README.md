@@ -15,7 +15,7 @@ This is a simple Twitter clone project with a focus on UI, built some functions 
 
 ## Demo 🎥
 
-You can find a live demo of the application by clicking here <a href="https://twitter-clone.freewebhostmost.com/"><b>Twitter</b></a>.
+You can find a live demo of the application by clicking here <a href="https://twitter-clone-livid-iota.vercel.app/"><b>Twitter</b></a>.
 
 ## Screenshot 📷
 
